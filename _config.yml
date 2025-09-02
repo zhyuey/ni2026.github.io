@@ -1,0 +1,64 @@
+# GitHub Pages Configuration
+title: "Neuromorphic Intelligence Workshop 2026"
+description: "The Neuromorphic Intelligence Workshop brings together researchers, engineers, and practitioners working on brain-inspired computing systems and their applications."
+author: "NI Workshop 2026 Organizing Committee"
+email: "ni-workshop-2026@example.com"
+url: "https://ni2026.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include in processing
+include:
+  - _pages
+
+# Collections
+collections:
+  papers:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "paper"
+
+# SEO settings
+seo:
+  type: "Organization"
+  name: "Neuromorphic Intelligence Workshop 2026"
+  description: "The Neuromorphic Intelligence Workshop brings together researchers, engineers, and practitioners working on brain-inspired computing systems and their applications."
+  url: "https://ni2026.github.io"
+  image: "/assets/images/workshop-logo.png"
+  twitter:
+    username: "@niworkshop2026"
+  facebook:
+    app_id: "123456789"
