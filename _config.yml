@@ -30,13 +30,15 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
+ # add this line to the plugins list if you already have one
 title: "Neuromorphic Intelligence: From Algorithm to System"
 date: Jan. 26 or 27, 2026
 location: Singapore
 description: part of the 40th AAAI Conference on Artificial Intelligence (AAAI) 2026
 plugins:
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
